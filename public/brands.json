@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Acura",
+        "image_url": "https://example.com/images/acura.png",
+        "advertisement_image1": "https://example.com/ads/acura_ad1.jpg",
+        "advertisement_image2": "https://example.com/ads/acura_ad2.jpg",
+        "advertisement_image3": "https://example.com/ads/acura_ad3.jpg"
+    },
+    {
+        "name": "BMW",
+        "image_url": "https://example.com/images/bmw.png",
+        "advertisement_image1": "https://example.com/ads/bmw_ad1.jpg",
+        "advertisement_image2": "https://example.com/ads/bmw_ad2.jpg",
+        "advertisement_image3": "https://example.com/ads/bmw_ad3.jpg"
+    },
+    {
+        "name": "Chevrolet",
+        "image_url": "https://example.com/images/chevrolet.png",
+        "advertisement_image1": "https://example.com/ads/chevrolet_ad1.jpg",
+        "advertisement_image2": "https://example.com/ads/chevrolet_ad2.jpg",
+        "advertisement_image3": "https://example.com/ads/chevrolet_ad3.jpg"
+    },
+    {
+        "name": "Ford",
+        "image_url": "https://example.com/images/ford.png",
+        "advertisement_image1": "https://example.com/ads/ford_ad1.jpg",
+        "advertisement_image2": "https://example.com/ads/ford_ad2.jpg",
+        "advertisement_image3": "https://example.com/ads/ford_ad3.jpg"
+    },
+    {
+        "name": "Honda",
+        "image_url": "https://example.com/images/honda.png",
+        "advertisement_image1": "https://example.com/ads/honda_ad1.jpg",
+        "advertisement_image2": "https://example.com/ads/honda_ad2.jpg",
+        "advertisement_image3": "https://example.com/ads/honda_ad3.jpg"
+    },
+    {
+        "name": "Toyota",
+        "image_url": "https://example.com/images/toyota.png",
+        "advertisement_image1": "https://example.com/ads/toyota_ad1.jpg",
+        "advertisement_image2": "https://example.com/ads/toyota_ad2.jpg",
+        "advertisement_image3": "https://example.com/ads/toyota_ad3.jpg"
+    },
+    {
+        "name": "Volkswagen",
+        "image_url": "https://example.com/images/volkswagen.png",
+        "advertisement_image1": "https://example.com/ads/volkswagen_ad1.jpg",
+        "advertisement_image2": "https://example.com/ads/volkswagen_ad2.jpg",
+        "advertisement_image3": "https://example.com/ads/volkswagen_ad3.jpg"
+    },
+    {
+        "name": "Volvo",
+        "image_url": "https://example.com/images/volvo.png",
+        "advertisement_image1": "https://example.com/ads/volvo_ad1.jpg",
+        "advertisement_image2": "https://example.com/ads/volvo_ad2.jpg",
+        "advertisement_image3": "https://example.com/ads/volvo_ad3.jpg"
+    }
+]
