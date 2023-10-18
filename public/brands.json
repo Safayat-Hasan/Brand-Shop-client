@@ -1,58 +1,50 @@
 [
     {
-        "name": "Acura",
-        "image_url": "https://example.com/images/acura.png",
-        "advertisement_image1": "https://example.com/ads/acura_ad1.jpg",
-        "advertisement_image2": "https://example.com/ads/acura_ad2.jpg",
-        "advertisement_image3": "https://example.com/ads/acura_ad3.jpg"
-    },
-    {
+        "id": 1,
         "name": "BMW",
-        "image_url": "https://example.com/images/bmw.png",
-        "advertisement_image1": "https://example.com/ads/bmw_ad1.jpg",
-        "advertisement_image2": "https://example.com/ads/bmw_ad2.jpg",
-        "advertisement_image3": "https://example.com/ads/bmw_ad3.jpg"
+        "image_url": "https://i.ibb.co/xz1JjbZ/BMW-svg.png",
+        "advertisement_image1": "https://i.ibb.co/Km3w2V0/G30-5-Series-Business-Athlete-823x462.jpg",
+        "advertisement_image2": "https://i.ibb.co/hWvB2v9/maxresdefault.jpg",
+        "advertisement_image3": "https://i.ibb.co/qxk1dRp/maxresdefault-1.jpg"
     },
     {
-        "name": "Chevrolet",
-        "image_url": "https://example.com/images/chevrolet.png",
-        "advertisement_image1": "https://example.com/ads/chevrolet_ad1.jpg",
-        "advertisement_image2": "https://example.com/ads/chevrolet_ad2.jpg",
-        "advertisement_image3": "https://example.com/ads/chevrolet_ad3.jpg"
+        "id": 2,
+        "name": "Tesla",
+        "image_url": "https://i.ibb.co/c1H9jKZ/Tesla-logo.png",
+        "advertisement_image1": "https://i.ibb.co/VmvFkgQ/2dba3b4bfe2416f73ca106239bfc7d60.jpg",
+        "advertisement_image2": "https://i.ibb.co/GdLQHjD/main-qimg-5bf29ca647eebfea82db397690c092dc.jpg",
+        "advertisement_image3": "https://i.ibb.co/qR2jh2J/teslaad2-1024x576.jpg"
     },
     {
+        "id": 3,
         "name": "Ford",
-        "image_url": "https://example.com/images/ford.png",
-        "advertisement_image1": "https://example.com/ads/ford_ad1.jpg",
-        "advertisement_image2": "https://example.com/ads/ford_ad2.jpg",
-        "advertisement_image3": "https://example.com/ads/ford_ad3.jpg"
+        "image_url": "https://i.ibb.co/3WNrwDM/download.png",
+        "advertisement_image1": "https://i.ibb.co/GW7k6d8/07-Future-Is-Built.jpg",
+        "advertisement_image2": "https://i.ibb.co/0jmt3BF/hytko1p5xju64y1bvppwdu30lgcj.jpg",
+        "advertisement_image3": "https://i.ibb.co/jf7rNft/OEM-101109873-AR-1-0.jpg"
     },
     {
+        "id": 4,
         "name": "Honda",
-        "image_url": "https://example.com/images/honda.png",
-        "advertisement_image1": "https://example.com/ads/honda_ad1.jpg",
-        "advertisement_image2": "https://example.com/ads/honda_ad2.jpg",
-        "advertisement_image3": "https://example.com/ads/honda_ad3.jpg"
+        "image_url": "https://i.ibb.co/HB2kChx/2560px-Honda-svg.png",
+        "advertisement_image1": "https://i.ibb.co/xqKKSPY/honda-civic-type-r-the-civic-type-r-image-1-50756b5048ab03bf05dd5b59ba.jpg",
+        "advertisement_image2": "https://i.ibb.co/zFSyfBG/honda-the-other-side-1400x825.jpg",
+        "advertisement_image3": "https://i.ibb.co/zZYpnbR/maxresdefault.jpg"
     },
     {
+        "id": 5,
         "name": "Toyota",
-        "image_url": "https://example.com/images/toyota.png",
-        "advertisement_image1": "https://example.com/ads/toyota_ad1.jpg",
-        "advertisement_image2": "https://example.com/ads/toyota_ad2.jpg",
-        "advertisement_image3": "https://example.com/ads/toyota_ad3.jpg"
+        "image_url": "https://i.ibb.co/KDm1njC/toyota-logo-08-A29-AEE08-seeklogo-com.png",
+        "advertisement_image1": "https://i.ibb.co/wddFcdF/0a688b94928655-5e8b4238e9c69.jpg",
+        "advertisement_image2": "https://i.ibb.co/tc1BLJH/maxresdefault.jpg",
+        "advertisement_image3": "https://i.ibb.co/cgdgrmd/wsg02gavsvsvl34ngl4axjy1buoa.jpg"
     },
     {
-        "name": "Volkswagen",
-        "image_url": "https://example.com/images/volkswagen.png",
-        "advertisement_image1": "https://example.com/ads/volkswagen_ad1.jpg",
-        "advertisement_image2": "https://example.com/ads/volkswagen_ad2.jpg",
-        "advertisement_image3": "https://example.com/ads/volkswagen_ad3.jpg"
-    },
-    {
-        "name": "Volvo",
-        "image_url": "https://example.com/images/volvo.png",
-        "advertisement_image1": "https://example.com/ads/volvo_ad1.jpg",
-        "advertisement_image2": "https://example.com/ads/volvo_ad2.jpg",
-        "advertisement_image3": "https://example.com/ads/volvo_ad3.jpg"
+        "id": 6,
+        "name": "Mercedes-Benz",
+        "image_url": "https://i.ibb.co/2srd2fX/1200px-Mercedes-Benz-Logo-11.jpg",
+        "advertisement_image1": "https://i.ibb.co/vqJR2qX/maxresdefault.jpg",
+        "advertisement_image2": "https://i.ibb.co/C0Q5Lbd/MB-Summer2012-01.jpg",
+        "advertisement_image3": "https://i.ibb.co/d5BbmLY/mercedes-benz-e-class-lbw-sporty-and-dynamic-design-ad-times-of-india-delhi-10-7-2021.png"
     }
 ]
