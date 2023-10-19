@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "BMW",
+        "brname": "BMW",
         "image_url": "https://i.ibb.co/xz1JjbZ/BMW-svg.png",
         "advertisement_image1": "https://i.ibb.co/Km3w2V0/G30-5-Series-Business-Athlete-823x462.jpg",
         "advertisement_image2": "https://i.ibb.co/hWvB2v9/maxresdefault.jpg",
@@ -9,7 +9,7 @@
     },
     {
         "id": 2,
-        "name": "Tesla",
+        "brname": "Tesla",
         "image_url": "https://i.ibb.co/c1H9jKZ/Tesla-logo.png",
         "advertisement_image1": "https://i.ibb.co/VmvFkgQ/2dba3b4bfe2416f73ca106239bfc7d60.jpg",
         "advertisement_image2": "https://i.ibb.co/GdLQHjD/main-qimg-5bf29ca647eebfea82db397690c092dc.jpg",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "name": "Ford",
+        "brname": "Ford",
         "image_url": "https://i.ibb.co/3WNrwDM/download.png",
         "advertisement_image1": "https://i.ibb.co/GW7k6d8/07-Future-Is-Built.jpg",
         "advertisement_image2": "https://i.ibb.co/0jmt3BF/hytko1p5xju64y1bvppwdu30lgcj.jpg",
@@ -25,7 +25,7 @@
     },
     {
         "id": 4,
-        "name": "Honda",
+        "brname": "Honda",
         "image_url": "https://i.ibb.co/HB2kChx/2560px-Honda-svg.png",
         "advertisement_image1": "https://i.ibb.co/xqKKSPY/honda-civic-type-r-the-civic-type-r-image-1-50756b5048ab03bf05dd5b59ba.jpg",
         "advertisement_image2": "https://i.ibb.co/zFSyfBG/honda-the-other-side-1400x825.jpg",
@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "name": "Toyota",
+        "brname": "Toyota",
         "image_url": "https://i.ibb.co/KDm1njC/toyota-logo-08-A29-AEE08-seeklogo-com.png",
         "advertisement_image1": "https://i.ibb.co/wddFcdF/0a688b94928655-5e8b4238e9c69.jpg",
         "advertisement_image2": "https://i.ibb.co/tc1BLJH/maxresdefault.jpg",
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "name": "Mercedes-Benz",
+        "brname": "Mercedes-Benz",
         "image_url": "https://i.ibb.co/2srd2fX/1200px-Mercedes-Benz-Logo-11.jpg",
         "advertisement_image1": "https://i.ibb.co/vqJR2qX/maxresdefault.jpg",
         "advertisement_image2": "https://i.ibb.co/C0Q5Lbd/MB-Summer2012-01.jpg",

@@ -10,7 +10,7 @@ const BrandDetails = () => {
 
     return (
         <div className="mt-12 mb-24">
-            <h2 className="mb-10 text-center text-7xl text-green-700">{detail.name}</h2>
+            <h2 className="mb-10 text-center text-7xl text-green-700">{detail.brname}</h2>
             <div className="carousel w-full h-[500px]">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src={detail.advertisement_image1} className="w-full" />
@@ -36,6 +36,7 @@ const BrandDetails = () => {
             </div>
             <div className="items-center mt-16">
                 <h2 className="text-4xl text-teal-600 text-center font-bold">Other Products</h2>
+                
             </div>
         </div>
     );

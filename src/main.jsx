@@ -13,6 +13,8 @@ import AddProduct from './pages/AddProduct';
 import MyCart from './pages/MyCart';
 import Login from './pages/Login';
 import BrandDetails from './pages/BrandDetails';
+import Products from './pages/Products';
+import SignUp from './pages/SignUp';
 
 const router = createBrowserRouter([
   {
@@ -38,9 +40,21 @@ const router = createBrowserRouter([
         element: <Login/>,
       },
       {
+        path: '/signup',
+        element: <SignUp/>,
+      },
+      {
+        path: '/products',
+        element: <Products/>,
+        loader: () => fetch('http://localhost:5000/products')
+      },
+      {
         path: '/brdetails/:id',
         element: <BrandDetails/>,
         loader: () => fetch('/brands.json')
+          
+          // fetch('http://localhost:5000/products')
+        
       },
     ],
   },

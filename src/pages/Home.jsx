@@ -13,7 +13,7 @@ const Home = () => {
             <h2 className="text-center text-3xl font-extrabold mb-6 mt-10 text-lime-500">Choose Your Brand</h2>
             <div className="mt-10 mb-10 grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {
-                    brands.map(brand => <BrandCard key={brand.id} brands={brand}></BrandCard>)
+                    brands.map(brand => <BrandCard key={brand._id} brands={brand}></BrandCard>)
                 }
             </div>
             <div>
