@@ -2,6 +2,14 @@ import { NavLink } from "react-router-dom";
 
 
 const Login = () => {
+
+    const handleLogIn = event => {
+        event.preventDefault();
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+    }
+
     return (
         <div>
             <div className="hero min-h-screen bg-emerald-100">
@@ -11,7 +19,7 @@ const Login = () => {
                         <p className="py-6">Login now and dive into the world of mind-blowing Automobiles</p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <form className="card-body">
+                        <form onSubmit={handleLogIn} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>

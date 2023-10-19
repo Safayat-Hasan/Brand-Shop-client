@@ -14,7 +14,9 @@ const ProductCard = ({ products }) => {
                         <p className="font-semibold">Brand: <span className="font-bold">{brand}</span></p>
                         <p className="font-semibold">Type: <span className="font-bold">{type}</span></p>
                         <p className="font-semibold">Price: <span className="font-bold">{price}</span></p>
-                        <p className="font-semibold">Rating: <span className="font-bold">{rating}</span></p>
+                        <p className="font-semibold mb-4">Rating: <span className="font-bold">{rating}</span></p>
+                        <button className="btn mr-2 bg-emerald-500 text-white">Details</button>
+                        <button className="btn bg-emerald-500 text-white">Update</button>
                     </div>
                     {/* <div className="card-actions justify-end">
                         <div className="btn-group btn-group-vertical space-y-4">

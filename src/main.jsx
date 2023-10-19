@@ -29,32 +29,32 @@ const router = createBrowserRouter([
       },
       {
         path: '/addproduct',
-        element: <AddProduct/>,
+        element: <AddProduct />,
       },
       {
         path: '/mycart',
-        element: <MyCart/>,
+        element: <MyCart />,
       },
       {
         path: '/login',
-        element: <Login/>,
+        element: <Login />,
       },
       {
         path: '/signup',
-        element: <SignUp/>,
+        element: <SignUp />,
       },
       {
-        path: '/products',
-        element: <Products/>,
-        loader: () => fetch('http://localhost:5000/products')
+        path: '/products/:brand',
+        element: <Products />,
+        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.brand}`)
       },
       {
         path: '/brdetails/:id',
-        element: <BrandDetails/>,
+        element: <BrandDetails />,
         loader: () => fetch('/brands.json')
-          
-          // fetch('http://localhost:5000/products')
-        
+
+        // fetch('http://localhost:5000/products')
+
       },
     ],
   },
