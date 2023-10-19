@@ -16,7 +16,7 @@ const ProductCard = ({ products }) => {
                         <p className="font-semibold">Type: <span className="font-bold">{type}</span></p>
                         <p className="font-semibold">Price: <span className="font-bold">{price}</span></p>
                         <p className="font-semibold mb-4">Rating: <span className="font-bold">{rating}</span></p>
-                        <button className="btn mr-2 bg-emerald-500 text-white">Details</button>
+                        <Link to={`../products/infos/${_id}`}><button className="btn mr-2 bg-emerald-500 text-white">Details</button></Link>
                         <Link to={`../updateProduct/${_id}`}><button className="btn bg-emerald-500 text-white">Update</button></Link>
                     </div>
                     {/* <div className="card-actions justify-end">
