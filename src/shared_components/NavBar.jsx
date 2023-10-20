@@ -1,8 +1,27 @@
 import { Link, NavLink } from "react-router-dom";
 import { IoCarSport } from "react-icons/io5";
+import { useContext } from "react";
+import { AuthContext } from "../main_components/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const NavBar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogout = () => {
+        logOut()
+            .then(() => {
+                console.log('logged out');
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Successfully Logged Out',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                })
+            })
+            .catch(error => console.log(error))
+    }
 
     const navLinks = <>
         <li className="text-lime-600 font-bold"><NavLink to="/">Home</NavLink></li>
@@ -33,7 +52,10 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn text-lime-700 font-bold"><NavLink to="/login">Login</NavLink></button>
+                {user ?
+                    <a onClick={handleLogout} className="btn text-lime-700 font-bold">Sign out</a>:
+                    <button className="btn text-lime-700 font-bold"><NavLink to="/login">Login</NavLink></button>
+                }
             </div>
         </div>
     );

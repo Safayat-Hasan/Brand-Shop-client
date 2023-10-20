@@ -1,17 +1,15 @@
-// import { useContext } from "react";
+import { useContext } from "react";
 import { NavLink } from "react-router-dom";
-// import { AuthContext } from "../main_components/AuthProvider";
-import { createUserWithEmailAndPassword, getAuth, updateProfile } from "firebase/auth";
-import app from "../firebase/firebase.config";
+import { AuthContext } from "../main_components/AuthProvider";
+import { updateProfile } from "firebase/auth";
 import Swal from "sweetalert2";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const auth = getAuth(app);
 
 const SignUp = () => {
 
-    // const { createUser } = useContext(AuthContext)
+    const { createUser } = useContext(AuthContext)
 
     const handleSignUp = e => {
 
@@ -40,7 +38,7 @@ const SignUp = () => {
             return;
         }
 
-        createUserWithEmailAndPassword(auth, email, password)
+        createUser(email, password)
             .then(result => {
                 console.log(result.user)
                 Swal.fire({
