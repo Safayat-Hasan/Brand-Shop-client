@@ -1,14 +1,19 @@
 import { useLoaderData } from "react-router-dom";
 import BrandCard from "../components/BrandCard";
 import Banner from "../components/Banner";
+import Toggle from "../toggle/Toggle";
+import { useState } from "react";
 
 
 const Home = () => {
 
+    const [isDark, setIsDark] = useState(false);
+
     const brands = useLoaderData();
 
     return (
-        <div className="mb-28">
+        <div className="mb-28" data-theme={isDark ? "dark":"light"}>
+            <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)}></Toggle>
             <Banner></Banner>
             <h2 className="text-center text-3xl font-extrabold mb-6 mt-10 text-lime-500">Choose Your Brand</h2>
             <div className="mt-10 mb-10 grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-4">
