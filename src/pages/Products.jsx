@@ -8,7 +8,7 @@ const Products = () => {
     const products = useLoaderData();
 
     return (
-        <div>
+        <div className="mb-28 mt-16">
             {products.length > 0 ?
                 
             <div>

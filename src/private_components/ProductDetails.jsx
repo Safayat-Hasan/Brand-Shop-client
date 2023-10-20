@@ -29,7 +29,7 @@ const ProductDetails = () => {
     }
 
     return (
-        <div className="mt-12 mb-24">
+        <div className="mt-16 mb-28">
             <h2 className="mb-10 text-center text-7xl text-emerald-800">{details.name}</h2>
             <img className="w-full" src={details.image} alt="" />
             {/* <p className="mt-10 text-2xl md:text-3xl font-bold">{detail.big_description}</p> */}

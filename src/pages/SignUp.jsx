@@ -1,7 +1,17 @@
+// import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+// import { AuthContext } from "../main_components/AuthProvider";
+import { createUserWithEmailAndPassword, getAuth, updateProfile } from "firebase/auth";
+import app from "../firebase/firebase.config";
+import Swal from "sweetalert2";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+const auth = getAuth(app);
 
 const SignUp = () => {
+
+    // const { createUser } = useContext(AuthContext)
 
     const handleSignUp = e => {
 
@@ -18,21 +28,43 @@ const SignUp = () => {
 
 
         if (password.length < 6) {
-            // toastMsg('Your Password should be at least 6 characters or more');
+            toastMsg('Your Password should be at least 6 characters or more');
             return;
         }
         else if (!/[A-Z]/.test(password)) {
-            // toastMsg('Your password should have at least one uppercase letter');
+            toastMsg('Your password should have at least one uppercase letter');
             return;
         }
         else if (!/[!@#$%^&*()_+{}\[\]:;<>,.?~\\|]/.test(password)) {
-            // toastMsg("Your password should have at least one special character");
+            toastMsg("Your password should have at least one special character");
             return;
         }
+
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                console.log(result.user)
+                Swal.fire({
+                    title: 'Success!',
+                    text: 'Account Registered',
+                    icon: 'success',
+                    confirmButtonText: 'Cool'
+                })
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: image
+                })
+            })
+            .catch(error => {
+                console.error(error)
+            })
+    }
+
+    const toastMsg = (input) => {
+        toast(input);
     }
 
     return (
-        <div>
+        <div className="mt-16 mb-28">
             <div className="hero-content flex-col lg:flex-row-reverse bg-emerald-100">
                 <div className="text-center lg:text-left">
                     <h1 className="text-5xl font-bold">Register now!</h1>
@@ -71,6 +103,10 @@ const SignUp = () => {
                     </form>
                 </div>
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                />
         </div>
     );
 };

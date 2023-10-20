@@ -2,7 +2,7 @@ import { IoCarSport } from "react-icons/io5";
 
 const Footer = () => {
     return (
-        <div className="mt-16">
+        <div className="">
             <footer className="footer p-10 bg-emerald-100 text-base-content">
                 <aside>
                     <div className="flex items-center gap-3">
