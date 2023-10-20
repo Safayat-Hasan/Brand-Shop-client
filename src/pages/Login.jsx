@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../main_components/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -10,6 +10,9 @@ import { AiFillGoogleCircle } from 'react-icons/ai';
 const Login = () => {
 
     const { logIn, signInWithGoogle } = useContext(AuthContext)
+
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const handleLogIn = event => {
         event.preventDefault();
@@ -26,7 +29,7 @@ const Login = () => {
                     icon: 'success',
                     confirmButtonText: 'Cool'
                 })
-                // navigate(location?.state ? location.state : '/login');
+                navigate(location?.state ? location.state : '/login');
                 // navigate after login
                 // navigate(location?.state ? location.state : '/');
             })
