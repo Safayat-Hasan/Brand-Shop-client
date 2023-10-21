@@ -5,7 +5,7 @@ import { AuthContext } from "../main_components/AuthProvider";
 const HeaderUser = () => {
 
     const {user} = useContext(AuthContext);
-
+    console.log(user.email);
     return (
         <div className="text-end">
             <div>

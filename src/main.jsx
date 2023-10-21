@@ -20,6 +20,7 @@ import ProductDetails from './private_components/ProductDetails';
 import AuthProvider from './main_components/AuthProvider';
 import PrivateRoute from './private_components/PrivateRoute';
 import App from './App';
+import PrivateRouteCart from './private_components/PrivateRouteCart';
 
 const router = createBrowserRouter([
   {
@@ -34,16 +35,16 @@ const router = createBrowserRouter([
       },
       {
         path: '/app',
-        element: <App/>,
+        element: <App />,
       },
       {
         path: '/addProduct',
         element: <PrivateRoute><AddProduct /></PrivateRoute>,
       },
       {
-        path: '/myCart',
-        element: <PrivateRoute><MyCart /></PrivateRoute>,
-        loader: () => fetch(`http://localhost:5000/cart`)
+        path: '/cart/:email',
+        element: <PrivateRouteCart><MyCart /></PrivateRouteCart>,
+        loader: ({params}) => fetch(`http://localhost:5000/cart/${params.email}`)
       },
       {
         path: '/login',

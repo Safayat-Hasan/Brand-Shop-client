@@ -1,10 +1,15 @@
 import { useLoaderData } from "react-router-dom";
 import Swal from "sweetalert2";
+import { AuthContext } from "../main_components/AuthProvider";
+import { useContext } from "react";
 
 
 const ProductDetails = () => {
 
+    const {user} = useContext(AuthContext);
+
     const details = useLoaderData();
+    details.email = user.email.slice(0, -4);
 
     const addToCart = () => {
         fetch(`http://localhost:5000/cart`, {

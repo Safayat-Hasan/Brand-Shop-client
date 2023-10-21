@@ -9,6 +9,11 @@ const NavBar = () => {
 
     const { user, logOut } = useContext(AuthContext);
 
+    var sliced=null;
+    {
+        user? sliced = user.email.slice(0, -4):sliced=null
+    }
+
     const handleLogout = () => {
         logOut()
             .then(() => {
@@ -25,9 +30,9 @@ const NavBar = () => {
 
     const navLinks = <>
         <li className="text-lime-600 font-bold"><NavLink to="/">Home</NavLink></li>
-        <li className="text-lime-600 font-bold"><NavLink to="/addproduct">Add Product</NavLink></li>
-        <li className="text-lime-600 font-bold"><NavLink to="/mycart">My Cart</NavLink></li>
-        <li className="text-lime-600 font-bold"><NavLink to="/signup">Sign Up</NavLink></li>
+        <li className="text-lime-600 font-bold"><NavLink to="/addProduct">Add Product</NavLink></li>
+        <li className="text-lime-600 font-bold"><NavLink to={`/cart/${sliced}`}>My Cart</NavLink></li>
+        <li className="text-lime-600 font-bold"><NavLink to="/signUp">Sign Up</NavLink></li>
     </>
 
     return (
