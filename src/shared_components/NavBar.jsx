@@ -9,9 +9,9 @@ const NavBar = () => {
 
     const { user, logOut } = useContext(AuthContext);
 
-    var sliced=null;
+    var sliced = null;
     {
-        user? sliced = user.email.slice(0, -4):sliced=null
+        user ? sliced = user.email.slice(0, -4) : sliced = null
     }
 
     const handleLogout = () => {
@@ -58,7 +58,13 @@ const NavBar = () => {
             </div>
             <div className="navbar-end">
                 {user ?
-                    <a onClick={handleLogout} className="btn text-lime-700 font-bold">Sign out</a>:
+                    <div className="md:flex md:gap-2 items-center">
+                        <div>
+                            <img className="rounded-full mb-2 w-8 h-8 md:w-12 md:h-12 mx-auto" src={user.photoURL} alt="" />
+                            <p className="text-green-600 font-bold mb-2">{user.displayName}</p>
+                        </div>
+                        <a onClick={handleLogout} className="btn text-lime-700 font-bold">Sign out</a>
+                    </div> :
                     <button className="btn text-lime-700 font-bold"><NavLink to="/login">Login</NavLink></button>
                 }
             </div>
