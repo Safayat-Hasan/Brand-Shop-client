@@ -44,7 +44,7 @@ const router = createBrowserRouter([
       {
         path: '/cart/:email',
         element: <PrivateRouteCart><MyCart /></PrivateRouteCart>,
-        loader: ({params}) => fetch(`http://localhost:5000/cart/${params.email}`)
+        loader: ({params}) => fetch(`https://brand-shop-mern-server.vercel.app/cart/${params.email}`)
       },
       {
         path: '/login',
@@ -57,7 +57,7 @@ const router = createBrowserRouter([
       {
         path: '/products/details/:brand',
         element: <Products />,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/details/${params.brand}`)
+        loader: ({ params }) => fetch(`https://brand-shop-mern-server.vercel.app/products/details/${params.brand}`)
       },
       {
         path: '/brDetails/:id',
@@ -67,12 +67,12 @@ const router = createBrowserRouter([
       {
         path: '/updateProduct/:id',
         element: <PrivateRoute><UpdateProduct /></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://brand-shop-mern-server.vercel.app/products/${params.id}`)
       },
       {
         path: '/products/infos/:id',
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://brand-shop-mern-server.vercel.app/products/${params.id}`)
       },
     ],
   },

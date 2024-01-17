@@ -12,7 +12,7 @@ const ProductDetails = () => {
     details.email = user.email.slice(0, -4);
 
     const addToCart = () => {
-        fetch(`http://localhost:5000/cart`, {
+        fetch(`https://brand-shop-mern-server.vercel.app/cart`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

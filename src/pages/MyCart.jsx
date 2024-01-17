@@ -24,7 +24,7 @@ const MyCart = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/cart/${_id}`, {
+                fetch(`https://brand-shop-mern-server.vercel.app/cart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -56,7 +56,6 @@ const MyCart = () => {
                                 <div className="card-body">
                                     <h2 className="card-title text-3xl font-bold">{cart.name}</h2>
                                     <p className="font-extrabold text-xl text-emerald-600">Brand: {cart.brand}</p>
-                                    <p className="font-extrabold text-xl text-emerald-600">Brand: {cart.email}</p>
                                     <p className="font-extrabold text-xl text-lime-600">Price: {cart.price}</p>
                                     <div className="card-actions justify-end">
                                         <button onClick={() => handleDelete(cart._id)} className="btn bg-emerald-500">Delete from Cart</button>
